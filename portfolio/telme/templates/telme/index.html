@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Django App</title>
+    <style>
+        /* --- 全体のスタイル --- */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* --- ヘッダー --- */
+        .header {
+            background-color: #ffffff;
+            padding: 20px 40px;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 1.8em;
+            color: #2c3e50;
+        }
+
+        .header nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+        .header nav a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* --- メインコンテンツ --- */
+        .hero {
+            background-color: #3498db;
+            color: #ffffff;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h2 {
+            margin: 0 0 10px 0;
+            font-size: 2.5em;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        /* --- コンテンツセクション --- */
+        .content-section {
+            padding: 40px 0;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+
+        /* --- フッター --- */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #2c3e50;
+            color: #ffffff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Telme --Reading Share App--</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Webアプリ開発へようこそ！</h2>
+            <p>このページはDjangoを使って作られています。</p>
+        </section>
+
+        <div class="container">
+            <section class="content-section">
+                <div class="features">
+                    <div class="feature-card">
+                        <h3>🚀 Feature 1</h3>
+                        <p>機能は開発中です。読んだ本のデータを蓄積する機能を考えています。</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>💡 Feature 2</h3>
+                        <p>読んだ本の感想をシェアできます。</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🔧 About Me</h3>
+                        <p>タレントマネジメントシステムに読書履歴データをプラスすると面白いかなと思い構想に至りました。</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Matsui Ayaka. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
